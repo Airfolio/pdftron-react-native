@@ -1,5 +1,8 @@
 export default {
+
+  // Buttons define the various kinds of buttons for the viewer
   Buttons: {
+    editToolButton: 'editToolButton',
     viewControlsButton: 'viewControlsButton',
     freeHandToolButton: 'freeHandToolButton',
     highlightToolButton: 'highlightToolButton',
@@ -40,6 +43,8 @@ export default {
     undo: 'undo',
     redo: 'redo'
   },
+
+  // Tools define the various kinds of tools for the viewer
   Tools: {
     annotationEdit: 'AnnotationEdit',
     textSelect: 'TextSelect',
@@ -84,12 +89,16 @@ export default {
     // iOS only.
     pencilKitDrawing: 'PencilKitDrawing',
   },
+
+  // FitMode define how a page should fit relative to the viewer, alternatively, the default zoom level
   FitMode: {
     FitPage: 'FitPage',
     FitWidth: 'FitWidth',
     FitHeight: 'FitHeight',
     Zoom: 'Zoom',
   },
+
+  // LayoutMode defines the layout mode of the viewer
   LayoutMode: {
     Single: 'Single',
     Continuous: 'Continuous',
@@ -98,10 +107,14 @@ export default {
     FacingCover: 'FacingCover',
     FacingCoverContinuous: 'FacingCoverContinuous',
   },
+
+  // FieldFlags define the property flags for a form field
   FieldFlags: {
     ReadOnly: 0,
     Required: 1,
   },
+
+  // AnnotationMenu defines the menu items when an annotation is selected
   AnnotationMenu: {
     style: 'style',
     note: 'note',
@@ -119,15 +132,22 @@ export default {
     openAttachment: 'openAttachment',
     calibrate: 'calibrate',
   },
+
+  // LongPressMenu defines the menu items when a long press on empty space or text occurs
   LongPressMenu: {
     copy: 'copy',
     search: 'search',
     share: 'share',
     read: 'read',
   },
+  
+  // Actions define potentially overridable action to the viewer
   Actions: {
     linkPress: 'linkPress',
+    stickyNoteShowPopUp: 'stickyNoteShowPopUp',
   },
+
+  // AnnotationFlags define the flags for any annotation in the document
   AnnotationFlags: {
     hidden: "hidden",
     invisible: "invisible",
@@ -140,6 +160,8 @@ export default {
     readOnly: "readOnly",
     toggleNoView: "toggleNoView"
   },
+
+  // DefaultToolbars define a set of pre-designed toolbars for easier customization
   DefaultToolbars: {
     View: "PDFTron_View",
     Annotate: "PDFTron_Annotate",
@@ -152,6 +174,8 @@ export default {
     Redaction: "PDFTron_Redact",
     Favorite: "PDFTron_Favorite"
   },
+
+  // ToolbarIcons define default toolbar icons for use for potential custom toolbars
   ToolbarIcons: {
     View: "PDFTron_View",
     Annotate: "PDFTron_Annotate",
@@ -164,14 +188,59 @@ export default {
     Redaction: "PDFTron_Redact",
     Favorite: "PDFTron_Favorite"
   },
+
+  // CustomToolbarKey defines the necessary keys for a custom toolbar
   CustomToolbarKey: {
     Id: "id",
     Name: "name",
     Icon: "icon",
     Items: "items"
   },
+
+  // ThumbnailFilterMode defines filter modes in the thumbnails browser
   ThumbnailFilterMode: {
     Annotated: "annotated",
     Bookmarked: "bookmarked",
+  },
+
+  // Conversion defines conversion sources and destinations
+  Conversion: {
+    Screen: "screen",
+    Canvas: "canvas",
+    Page: "page",
+  },
+  
+  // ViewModePickerItem defines view mode items in the view mode dialog
+  ViewModePickerItem: {
+    Crop: "viewModeCrop",
+  },
+
+  // ZoomLimitMode defines the limit mode for zoom in the current document viewer
+  ZoomLimitMode: {
+    None: "none",
+    Absolute: "absolute",
+    Relative: "relative",
+  },
+
+  // OverprintMode defines when overprint would be applied in the viewer
+  OverprintMode: {
+    On: "on",
+    Off: "off",
+    OnlyPDFX: "pdfx", // only apply to PDF/X files
+  },
+
+  // ColorPostProcessMode defines color modifications after rendering in the viewer
+  ColorPostProcessMode: {
+    None: "none",
+    Invert: "invert",
+    GradientMap: "gradientMap",
+    NightMode: "nightMode"
+  },
+
+  // Export to format
+  ExportFormat: {
+    BMP: "BMP",
+    JPEG: "JPEG",
+    PNG: "PNG",
   },
 };
