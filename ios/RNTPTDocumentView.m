@@ -894,10 +894,6 @@ NS_ASSUME_NONNULL_END
     {
         toolClass = [PTFreeHandCreate class];
     }
-    else if ( [toolMode isEqualToString:PTAnnotationCreateFreeHandHighlightToolKey] )
-    {
-        toolClass = [PTFreeHandHighlightCreate class];
-    }
     else if ( [toolMode isEqualToString:PTTextSelectToolKey] )
     {
         toolClass = [PTTextSelectTool class];
@@ -2864,7 +2860,6 @@ NS_ASSUME_NONNULL_END
         PTAnnotationCreateStickyToolKey : @(PTExtendedAnnotTypeText),
         PTStickyToolButtonKey : @(PTExtendedAnnotTypeText),
         PTAnnotationCreateFreeHandToolKey : @(PTExtendedAnnotTypeInk),
-        PTAnnotationCreateFreeHandHighlightToolKey: @(PTExtendedAnnotTypeFreehandHighlight),
         PTAnnotationCreateTextHighlightToolKey : @(PTExtendedAnnotTypeHighlight),
         PTAnnotationCreateTextUnderlineToolKey : @(PTExtendedAnnotTypeUnderline),
         PTAnnotationCreateTextSquigglyToolKey : @(PTExtendedAnnotTypeSquiggly),
